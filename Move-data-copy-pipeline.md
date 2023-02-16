@@ -68,3 +68,45 @@ Configure the service details, test the connection, and create the new linked se
 
 ## Task 2 - Query Azure Data Lake Storage Gen 2 data and load into dedicated SQL Pool using Spark Pool
 
+1. In Synapse Studio, select Develop from the left-hand menu.
+
+![image](https://user-images.githubusercontent.com/84516667/219264799-0517e3ef-cde7-4913-91f5-e6d5794d640d.png)
+
+2. Select +, then Notebook to add a new notebook.
+
+![image](https://user-images.githubusercontent.com/84516667/219264937-a0b32f5f-f700-4f83-9f29-4790542c4418.png)
+
+3. Attach your Apache Spark pool by selecting it from the Attach to (1) drop-down list, then select {} Add code (3) to create a new cell.
+
+![image](https://user-images.githubusercontent.com/84516667/219265118-b495572f-7804-4535-8d4e-517cc552d692.png)
+
+4. Paste the following into the new cell, and replace YOUR_DATALAKE_NAME with the name of your Storage Account Name provided in the environment details section on Lab Environment tab on the right.
+
+   ```scala
+    %%spark
+
+    // Set the path to read the WWI Sales files
+    import org.apache.spark.sql.SparkSession
+
+    // Set the path to the ADLS Gen2 account
+    val adlsPath = "abfss://wwi@YOUR_DATALAKE_NAME.dfs.core.windows.net"
+    ```
+
+    Select the **Run cell** button to execute the new cell:
+ 
+ ![image](https://user-images.githubusercontent.com/84516667/219265549-a04cf055-7ce0-4849-b77d-6975ba5f210e.png)
+
+   > This cell imports required libraries and sets the `adlsPath` variable, which defines the path used to connect to an Azure Data Lake Storage (ADLS) Gen2 account. Connecting to ADLS Gen2 from a notebook in Azure Synapse Analytics uses the power of Azure Active Directory (AAD) pass-through between compute and storage. The `%%spark` "magic" sets the cell language to Scala, which is required to use the `SparkSession` library.
+
+5. Hover over the area just below the cell in the notebook, then select {} Add code to add a new cell.
+
+![image](https://user-images.githubusercontent.com/84516667/219265767-1a1b5c5a-fe74-490d-961f-795200c779d0.png)
+
+6. Paste the following and run the new cell:
+
+%%spark
+
+// Read the sales into a dataframe
+val sales = spark.read.format("csv").option("header", "true").option("inferSchema", "true").option("sep", "|").load(s"$adlsPath/factsale-csv/2012/Q4")
+sales.show(5)
+sales.printSchema()
