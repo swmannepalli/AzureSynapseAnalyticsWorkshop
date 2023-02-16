@@ -104,9 +104,45 @@ Configure the service details, test the connection, and create the new linked se
 
 6. Paste the following and run the new cell:
 
-%%spark
+    ```scala
+      %%spark
 
-// Read the sales into a dataframe
-val sales = spark.read.format("csv").option("header", "true").option("inferSchema", "true").option("sep", "|").load(s"$adlsPath/factsale-csv/2012/Q4")
-sales.show(5)
-sales.printSchema()
+      // Read the sales into a dataframe
+      val sales = spark.read.format("csv").option("header", "true").option("inferSchema", "true").option("sep", "|").load(s"$adlsPath/factsale-csv/2012/Q4")
+      sales.show(5)
+      sales.printSchema()
+ 
+
+  This code loads data from CSV files in the data lake into a DataSet. Note the `option` parameters in the `read` command. These options specify the settings to use when reading the CSV files. The options tell Spark that the first row of each file containers the column headers, the separator in the files in the `|` character, and that we want Spark to infer the schema of the files based on an analysis of the contents of each column. Finally, we display the first five records of the data retrieved and print the inferred schema to the screen.
+
+7. Hover over the area just below the cell in the notebook, then select {} Add code to add a new cell.
+
+![image](https://user-images.githubusercontent.com/84516667/219267113-d4637e01-63ff-4f4f-aedb-b4a80d2c2f77.png)
+
+8. Paste the following and run the new cell:
+
+        %%spark
+
+        // Import libraries for the SQL Analytics connector
+        import com.microsoft.spark.sqlanalytics.utils.Constants
+        import org.apache.spark.sql.SqlAnalyticsConnector._
+        import org.apache.spark.sql.SaveMode
+
+        // Set target table name
+        var tableName = s"SQLPool01.wwi_staging.Sale"
+
+        // Write the retrieved sales data into a staging table in Azure Synapse Analytics.
+        sales.limit(10000).write.mode(SaveMode.Append).sqlanalytics(tableName, Constants.INTERNAL)
+
+
+This code writes the data retrieved from Blob Storage into a staging table in Azure Synapse Analytics using the SQL Analytics connector. Using the connector simplifies connecting to Azure Synapse Analytics because it uses AAD pass-through. There is no need to create a password, identity, external table, or format sources, as it is all managed by the connector.
+
+9. After approximately 1-2 minutes, the execution of Cell 3 will complete. Once it has finished, select Data from the left-hand menu.
+![image](https://user-images.githubusercontent.com/84516667/219267479-c94d7cfd-7a41-4014-86fd-95c7b40174b7.png)
+
+10. Under **Workspace** tab **(1)**, expand **Databases** **(2)** and then expand the **SQLPool01** database **(3)**.
+![image](https://user-images.githubusercontent.com/84516667/219267530-97dc80f8-61ec-45fe-af4e-d8f819dbb0aa.png)
+
+11.  Expand **Tables** and locate the table named `wwi_staging.Sale`.
+
+    > If you do not see the table, select the Actions ellipsis next to Tables and then select **Refresh** from the fly-out menu.
