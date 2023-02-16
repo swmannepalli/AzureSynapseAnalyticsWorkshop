@@ -11,7 +11,7 @@ Here, we will copy data from SQL Server on Azure Virtual Machine to Azure Data L
 
 **Prerequisites:**
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**1. Create Self-hosted Integration Runtime:**
+**1. Create Self-hosted Integration Runtime for SQL Server:**
 
 If your data store is located inside an on-premises network, an Azure virtual network, or Amazon Virtual Private Cloud, you need to configure a self-hosted integration runtime to connect to it.
 
@@ -40,6 +40,11 @@ Configure the service details, test the connection, and create the new linked se
 ![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
 
  Set properties to mention table name, select Lined service and integration runtime created above.
+ 
+ **4. Create Azure Data Lake Storage Gen 2 Linked Service:**
+ 
+ Use the following steps to create Azure Data Lake Storage Gen 2 linked service in the Azure portal UI.
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -59,4 +64,7 @@ Configure the service details, test the connection, and create the new linked se
 
 4. Go to Source Tab and select the SQL Server Dataset created above.
 5. Go to Sink tab, select Azure Data Lake Storage Gen2 Dataset created above.
+6. Click on Debug to run the pipeline. After successful completion, data will be copied from SQl Server on Azure VM to Azure Data Lake Storage Gen2.
+
+## Task 2 - Query Azure Data Lake Storage Gen 2 data and load into dedicated SQL Pool using Spark Pool
 
