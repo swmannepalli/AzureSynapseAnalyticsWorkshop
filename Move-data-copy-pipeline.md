@@ -145,4 +145,4 @@ This code writes the data retrieved from Blob Storage into a staging table in Az
 
 11.  Expand **Tables** and locate the table named `wwi_staging.Sale`.
 
-    > If you do not see the table, select the Actions ellipsis next to Tables and then select **Refresh** from the fly-out menu.
+  > If you do not see the table, select the Actions ellipsis next to Tables and then select **Refresh** from the fly-out menu.
