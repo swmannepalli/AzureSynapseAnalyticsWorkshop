@@ -6,7 +6,7 @@ The Power BI Workspace has already been created for you.
 
 The tasks you will perform in this exercise are:
 
-- Exercise 7 - Power BI integration
+- Exercise 5 - Power BI integration
   - Task 1 - Create a Power BI dataset in Synapse
   - Task 2 - Create a Power BI report in Synapse
 
