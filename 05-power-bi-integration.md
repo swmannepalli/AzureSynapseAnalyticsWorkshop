@@ -1,4 +1,4 @@
-# Exercise 7 - Power BI integration
+# Exercise 5 - Power BI integration
 
 In this exercise, you will realize another benefit of the fully integrated environment provided by Azure Synapse Analytics. Here, you will create a Power BI Report and build a visualization within Synapse Analytics Studio. Once you have published a dataset, you will not have to leave this environment to log into a separate Power BI website to view and edit reports.
 
@@ -14,7 +14,7 @@ The tasks you will perform in this exercise are:
 
 **Important**:
 
-In the tasks below, you will be asked to enter a unique identifier in several places. You can find your unique identifier by looking at the username you were provided for logging into the Azure portal. Your username is in the format `odl_user_UNIQUEID@msazurelabs.onmicrosoft.com`, where the _UNIQUEID_ component looks like `206184`, `206137`, or `205349`, as examples.
+In the tasks below, you will be asked to enter a unique identifier in several places. You can find your unique identifier by looking at the username you were provided for logging into the Azure portal. Your username and password is the Azure portal credentials.
 
 Please locate this value and note it for the steps below.
 
