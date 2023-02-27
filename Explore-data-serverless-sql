@@ -1,3 +1,0 @@
-In Azure Synapse Analytics, you can use either the SQL Serverless engine, the big-data Spark engine, or both. In this exercise, you will explore data using Serverless SQL pool.
-
-**Task 1 - Explore the data lake with Azure Synapse SQL On-demand**
