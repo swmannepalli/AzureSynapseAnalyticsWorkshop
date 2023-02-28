@@ -18,12 +18,18 @@ A pipeline contains the logical flow for an execution of a set of activities. In
 ## Select the data sources
 
 1. Select the **Develop** section on the far left blade
-      _You should see your newly created dataflow under the **Data Flows** section_
+    - _You should see your newly created dataflow under the **Data Flows** section_
       
 2. Add a source for the data you wish to transform by selecting **Add Source**
 ![image](https://user-images.githubusercontent.com/94631202/221684266-5ab5ed38-0295-489b-bc4a-4299799db406.png)
 
-3. 
+3. Select the source dataset in the **Source Settings** tab at the bottom of the page
+![image](https://user-images.githubusercontent.com/94631202/221886201-fc69f8a4-01c2-46e3-a57a-60e1df593141.png)
+
+4. You can select any additional data sources that you may need for lookups, joins, unions, etc.
+
+5. Don't forget to hit the publish button. This is the save button for the Azure Synapse Analytics Workspace
+![image](https://user-images.githubusercontent.com/94631202/221887334-9d7784ca-57a5-4fc5-817c-eeb771fe546d.png)
 
 ## Apply Transformations
 
