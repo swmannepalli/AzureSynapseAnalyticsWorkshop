@@ -25,6 +25,6 @@ In this task, you will browse your data lake using SQL On-demand.
 
    ![image](https://user-images.githubusercontent.com/41644397/221721861-f390f1ed-d5ef-4977-881e-bda82fa058ed.png)
 
-6. In Azure Synapse Analytics Studio, navigate to the Data hub.
+6. In Azure Synapse Analytics Studio, navigate to the Develop hub.
  
    ![image](https://user-images.githubusercontent.com/41644397/225426403-41d0b1db-2e0c-4cc9-852a-b83a4b6354ae.png)
