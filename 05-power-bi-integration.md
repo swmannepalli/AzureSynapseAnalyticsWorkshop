@@ -12,7 +12,7 @@ The tasks you will perform in this exercise are :
 
 ---
 
-**Important**:
+**  Important  **:
 
 In the tasks below, you will be asked to enter a unique identifier in several places. You can find your unique identifier by looking at the username you were provided for logging into the Azure portal. Your username and password is the Azure portal credentials.
 
