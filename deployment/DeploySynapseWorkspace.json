@@ -39,7 +39,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/cbattlegear/ModernDataWarehousingWorkshop/master/deploy/ARM/DeployDataLake.json",
+                    "uri": "https://raw.githubusercontent.com/swmannepalli/AzureSynapseAnalyticsWorkshop/main/deployment/DeployDataLake.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -55,7 +55,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/cbattlegear/ModernDataWarehousingWorkshop/master/deploy/ARM/DeployWorkspace.json",
+                    "uri": "https://raw.githubusercontent.com/swmannepalli/AzureSynapseAnalyticsWorkshop/main/deployment/DeployWorkspace.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {

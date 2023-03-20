@@ -75,7 +75,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/cbattlegear/ModernDataWarehousingWorkshop/master/deploy/ARM/DeploySQLAzure.json",
+                    "uri": "https://raw.githubusercontent.com/swmannepalli/AzureSynapseAnalyticsWorkshop/main/deployment/DeploySQLAzure.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -110,8 +110,8 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/cbattlegear/ModernDataWarehousingWorkshop/master/deploy/ARM/DeploySynapseWorkspace.json",
-                    "contentVersion": "1.1.0.0"
+                    "uri": "https://raw.githubusercontent.com/swmannepalli/AzureSynapseAnalyticsWorkshop/main/deployment/DeploySynapseWorkspace.json",
+                    "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
                     "sqlAdministratorLogin": {
@@ -133,7 +133,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/cbattlegear/ModernDataWarehousingWorkshop/master/deploy/ARM/DeployVirtualMachines.json",
+                    "uri": "https://raw.githubusercontent.com/swmannepalli/AzureSynapseAnalyticsWorkshop/main/deployment/DeployVirtualMachines.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {

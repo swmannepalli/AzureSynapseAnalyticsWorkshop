@@ -38,12 +38,6 @@
         "CatalogJsonFileName": {
             "value": "movies_southridge.json"
         },
-        "SQLFictitiousCompanyNamePrefix": {
-            "value": "VanArsdelLtd"
-        },
-        "CSVFictitiousCompanyNamePrefix": {
-            "value": "FourthCoffee"
-        },
         "CloudFictitiousCompanyNamePrefix": {
             "value": "southridge"
         },

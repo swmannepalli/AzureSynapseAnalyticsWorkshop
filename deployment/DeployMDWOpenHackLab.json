@@ -70,7 +70,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/cbattlegear/ModernDataWarehousingWorkshop/master/deploy/ARM/DeployMDWOpenHackLabMain.json",
+                    "uri": "https://raw.githubusercontent.com/swmannepalli/AzureSynapseAnalyticsWorkshop/main/deployment/DeployMDWOpenHackLabMain.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
