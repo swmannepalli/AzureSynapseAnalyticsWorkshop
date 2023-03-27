@@ -66,7 +66,9 @@
             "defaultValue": "ohmdw"
         }
     },
-    "variables": {},
+    "variables": {
+        "namePrefix": "[tolower(parameters('CloudFictitiousCompanyNamePrefix'))]"
+    },
     "resources": [
         {
             "apiVersion": "2017-05-10",
@@ -98,7 +100,7 @@
                         "value": "[parameters('location')]"
                     },
                     "namePrefix": {
-                        "value": "[parameters('CloudFictitiousCompanyNamePrefix')]"
+                        "value": "[variables('namePrefix')]"
                     }
                 }
             }
@@ -121,7 +123,7 @@
                         "value": "[parameters('SqlAdminLoginPassword')]"
                     },
                     "namePrefix": {
-                        "value": "[parameters('CloudFictitiousCompanyNamePrefix')]"
+                        "value": "[variables('namePrefix')]"
                     }
                 }
             }
@@ -174,7 +176,7 @@
                         "value": "[parameters('location')]"
                     },
                     "namePrefix": {
-                        "value": "[parameters('CloudFictitiousCompanyNamePrefix')]"
+                        "value": "[variables('namePrefix')]"
                     }
                 }
             }
