@@ -3,7 +3,7 @@ In this exercise, you examine various methods for ingesting data into Azure Syna
 The tasks you will perform in this exercise are:
 
   - Task 1 - Create and run a Synapse copy pipeline </br>
-     - Copy from SQl Server on Azure VM to Azure Data Lake Storage Gen 2
+     - Copy from SQL Server on Azure VM to Azure Data Lake Storage Gen 2
      - Copy from a file Server (on-prem) to Azure Data Lake Storage Gen 2
   - Task 2 - Query Azure Data Lake Storage Gen 2 data and load into dedicated SQL Pool using Spark Pool
 
