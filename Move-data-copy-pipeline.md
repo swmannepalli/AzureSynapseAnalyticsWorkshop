@@ -37,7 +37,7 @@ Use the following steps to create a SQL Server linked service in the Azure porta
 
 ![image](https://user-images.githubusercontent.com/84516667/228395895-a4d1be01-b0c5-44f7-bcd1-7a9f996c7df1.png)
 
-**3. Create a dataset with UI:**
+**3. Create a dataset for SQL Server:**
 
 ![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
 
@@ -58,6 +58,14 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
  - Select Create when finished.
 
 ![image](https://user-images.githubusercontent.com/84516667/228398161-b4134b9d-a312-45ed-aa11-558be3aca397.png)
+
+**3. Create a dataset for  Azure Data Lake Storage Gen 2:**
+
+![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
+
+- Search for Azure Data Lake Storage Gen 2 and click on Continue. Select DelimitedText and Continue. 
+- Select Lined service for Azure Data Lake Storage Gen 2 created above and select File path. 
+- Click on Ok
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
