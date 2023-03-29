@@ -63,8 +63,11 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 ![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
 
 - Search for Azure Data Lake Storage Gen 2 and click on Continue. Select DelimitedText and Continue. 
-- Select Lined service for Azure Data Lake Storage Gen 2 created above and select File path. 
+- Select Lined service for Azure Data Lake Storage Gen 2 created above and select File path. Provide file name as Customers.csv and select First row as header.
 - Click on Ok
+
+![image](https://user-images.githubusercontent.com/84516667/228629646-9f68cda3-286a-43a9-9e53-26e697a49b28.png)
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
