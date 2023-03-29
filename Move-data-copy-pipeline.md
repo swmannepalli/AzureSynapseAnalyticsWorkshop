@@ -57,7 +57,7 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
  - Select test connection to verify your credentials are correct.
  - Select Create when finished.
 
-![image](https://user-images.githubusercontent.com/84516667/228397966-18f67925-120a-4437-a505-0f69016e5110.png)
+![image](https://user-images.githubusercontent.com/84516667/228398161-b4134b9d-a312-45ed-aa11-558be3aca397.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
