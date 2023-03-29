@@ -68,6 +68,10 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 <img src="https://user-images.githubusercontent.com/84516667/228629646-9f68cda3-286a-43a9-9e53-26e697a49b28.png" width=60% height=20%>
 
+In the next page, add file name for the Dataset filepath.
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/84516667/228643954-410fae82-6f8f-4624-baef-290f48343240.png">
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
