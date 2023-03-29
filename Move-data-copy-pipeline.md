@@ -19,6 +19,8 @@ If your data store is located inside an on-premises network, an Azure virtual ne
 
 Follow instructions provided in the link to set up Self-hosted Integration Runtime. [Self-hosted IR Set up steps](https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime?tabs=synapse-analytics#create-a-self-hosted-ir-via-ui)
 
+**Note:** You will have to install this on Azure VM that is deployed as part of the intiail deployment.
+
 **2. Create a SQL Server linked service using UI:**
 
 Use the following steps to create a SQL Server linked service in the Azure portal UI.
