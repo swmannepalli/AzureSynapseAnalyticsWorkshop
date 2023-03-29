@@ -122,13 +122,13 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 ![image](https://user-images.githubusercontent.com/84516667/219265767-1a1b5c5a-fe74-490d-961f-795200c779d0.png)
 
-6. Paste the following and run the new cell:
+6. Paste the following in the new cell, Replace YOUR_CONTAINER_NAME with the name of the container in the storage account and run the cell:
 
     ```scala
       %%spark
 
       // Read the sales into a dataframe
-      val sales = spark.read.format("csv").option("header", "true").option("inferSchema", "true").option("sep", "|").load(s"$adlsPath/factsale-csv/2012/Q4")
+      val sales = spark.read.format("csv").option("header", "true").option("inferSchema", "true").option("sep", "|").load(s"$adlsPath/YOUR_CONTAINER_NAME")
       sales.show(5)
       sales.printSchema()
  
