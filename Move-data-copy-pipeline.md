@@ -48,8 +48,16 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
  
  **4. Create Azure Data Lake Storage Gen 2 Linked Service:**
  
- Use the following steps to create Azure Data Lake Storage Gen 2 linked service in the Azure portal UI.
+ - Open the Azure Synapse Analytics UX and go to the Manage tab.
+ - Under External connections, select Linked services.
+ - To add a linked service, select New.
+ - Select the Azure Data Lake Storage Gen2 tile from the list and select Continue.
+ - Enter your authentication credentials. Account key, service principal, and managed identity are currently supported authentication types. 
+      - Select Account Key and Select your subscription and storage account that is created as part of this deployment.
+ - Select test connection to verify your credentials are correct.
+ - Select Create when finished.
 
+![image](https://user-images.githubusercontent.com/84516667/228397966-18f67925-120a-4437-a505-0f69016e5110.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
