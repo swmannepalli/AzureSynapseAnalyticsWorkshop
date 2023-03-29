@@ -149,7 +149,7 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
         import org.apache.spark.sql.SaveMode
 
         // Set target table name
-        var tableName = s"SQLPool01.wwi_staging.Sale"
+        var tableName = s"sqldw.wwi_staging.Sale"
 
         // Write the retrieved sales data into a staging table in Azure Synapse Analytics.
         sales.limit(10000).write.mode(SaveMode.Append).sqlanalytics(tableName, Constants.INTERNAL)
