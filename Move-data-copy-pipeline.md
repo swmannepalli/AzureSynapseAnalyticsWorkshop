@@ -100,7 +100,7 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 ![image](https://user-images.githubusercontent.com/84516667/219265118-b495572f-7804-4535-8d4e-517cc552d692.png)
 
-4. Paste the following into the new cell, and replace YOUR_DATALAKE_NAME with the name of your Storage Account Name provided in the environment details section on Lab Environment tab on the right.
+4. Paste the following into the new cell, and replace YOUR_DATALAKE_NAME with the name of your Storage Account Name that is created as part of the deployment.
 
    ```scala
     %%spark
