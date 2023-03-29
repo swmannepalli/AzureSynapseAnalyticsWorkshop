@@ -33,11 +33,9 @@ Use the following steps to create a SQL Server linked service in the Azure porta
 
 ![image](https://user-images.githubusercontent.com/84516667/219209624-72223cee-d70b-4437-ac7b-81f0efc46177.png)
 
-Configure the service details, test the connection, and create the new linked service.
+**Note:** Use Self-hosted Interstion Runtime created above for Connect via integration runtime option. Configure the server name, user name, test the connection, and create the new linked service.
 
-**Note:** Use Self-hosted Interstion Runtime created above for Connect via integration runtime option.
-
-![image](https://user-images.githubusercontent.com/84516667/219210421-09040c74-28b8-4c38-a27e-9f39c3320cd6.png)
+![image](https://user-images.githubusercontent.com/84516667/228395895-a4d1be01-b0c5-44f7-bcd1-7a9f996c7df1.png)
 
 **3. Create a dataset with UI:**
 
