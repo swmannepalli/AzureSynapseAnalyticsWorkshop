@@ -85,7 +85,7 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 4. Go to Source Tab and select the SQL Server Dataset created above.
 5. Go to Sink tab, select Azure Data Lake Storage Gen2 Dataset created above.
-6. Click on Debug to run the pipeline. After successful completion, data will be copied from SQl Server on Azure VM to Azure Data Lake Storage Gen2.
+6. Click on Debug to run the pipeline. After successful completion, data will be copied from SQL Server on Azure VM to Azure Data Lake Storage Gen2.
 
 ## Task 2 - Query Azure Data Lake Storage Gen 2 data and load into dedicated SQL Pool using Spark Pool
 
