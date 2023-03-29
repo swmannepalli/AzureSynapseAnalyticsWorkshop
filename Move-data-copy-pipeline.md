@@ -26,24 +26,24 @@ Use the following steps to create a SQL Server linked service in the Azure porta
 
 1. Browse to the Manage tab in your Synapse workspace and select Linked Services, then click New:
 
-![image](https://user-images.githubusercontent.com/84516667/219209501-6c14a774-bff3-4147-b2ef-db7ebf6b28e1.png)
+
+<img src="https://user-images.githubusercontent.com/84516667/219209501-6c14a774-bff3-4147-b2ef-db7ebf6b28e1.png" width=60% height=40%>
 
 2. Search for SQL and select the SQL Server connector.
 
-![image](https://user-images.githubusercontent.com/84516667/219209624-72223cee-d70b-4437-ac7b-81f0efc46177.png)
+<img src="https://user-images.githubusercontent.com/84516667/219209624-72223cee-d70b-4437-ac7b-81f0efc46177.png" width=60% height=40%>
 
 **Note:** Use Self-hosted Interstion Runtime created above for Connect via integration runtime option. Configure the server name, user name, test the connection, and create the new linked service.
 
-![image](https://user-images.githubusercontent.com/84516667/228395895-a4d1be01-b0c5-44f7-bcd1-7a9f996c7df1.png)
+<img src="https://user-images.githubusercontent.com/84516667/228395895-a4d1be01-b0c5-44f7-bcd1-7a9f996c7df1.png" width=60% height=40%>
 
 **3. Create a dataset for SQL Server:**
 
-![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
+<img src="https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png" width=60% height=40%>
 
 Search for SQL Server and click on Continue. select Lined service for Sql Server created above and select dbo.Customers as Table name. Click on Ok
 
-![image](https://user-images.githubusercontent.com/84516667/228397209-a3e0fd35-bea5-43f1-b239-3172b4008d19.png)
-
+<img src="https://user-images.githubusercontent.com/84516667/228397209-a3e0fd35-bea5-43f1-b239-3172b4008d19.png" width=50% height=30%>
  
  **4. Create Azure Data Lake Storage Gen 2 Linked Service:**
  
@@ -56,17 +56,17 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
  - Select test connection to verify your credentials are correct.
  - Select Create when finished.
 
-![image](https://user-images.githubusercontent.com/84516667/228398161-b4134b9d-a312-45ed-aa11-558be3aca397.png)
+<img src="https://user-images.githubusercontent.com/84516667/228398161-b4134b9d-a312-45ed-aa11-558be3aca397.png" width=60% height=40%>
 
 **3. Create a dataset for  Azure Data Lake Storage Gen 2:**
 
-![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
+<img src="https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png" width=60% height=40%>
 
 - Search for Azure Data Lake Storage Gen 2 and click on Continue. Select DelimitedText and Continue. 
 - Select Lined service for Azure Data Lake Storage Gen 2 created above and select File path. Provide file name as Customers.csv and select First row as header.
 - Click on Ok
 
-![image](https://user-images.githubusercontent.com/84516667/228629646-9f68cda3-286a-43a9-9e53-26e697a49b28.png)
+<img src="https://user-images.githubusercontent.com/84516667/228629646-9f68cda3-286a-43a9-9e53-26e697a49b28.png" width=60% height=20%>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -75,15 +75,15 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 1. In Synapse Studio and select **Integrate** from the left-hand menu.
 
-   ![Integrate hub.](https://github.com/solliancenet/azure-synapse-analytics-day/blob/581681ab061efc42f4348a7f12761b5360dc4c74/media/integrate-hub.png)
-
+<img src="https://github.com/solliancenet/azure-synapse-analytics-day/blob/581681ab061efc42f4348a7f12761b5360dc4c74/media/integrate-hub.png" width=50% height=30%>
+ 
 2. In the Integrate menu, select + button and select Pipeline.
 
-<img width="689" alt="image" src="https://user-images.githubusercontent.com/84516667/219215510-b437a40c-3db7-4c2a-b98d-7e9a3a3653f8.png">
+<img src="https://user-images.githubusercontent.com/84516667/219215510-b437a40c-3db7-4c2a-b98d-7e9a3a3653f8.png" width=60% height=30%>
 
 3. Expand Move & Transform, drag and drop Copy data to the canvas.
 
-<img width="813" alt="image" src="https://user-images.githubusercontent.com/84516667/219216041-8611ccef-42bc-409e-84d6-31b2fa617fc0.png">
+<img src="https://user-images.githubusercontent.com/84516667/219216041-8611ccef-42bc-409e-84d6-31b2fa617fc0.png" width=60% height=30%>
 
 4. Go to Source Tab and select the SQL Server Dataset created above.
 5. Go to Sink tab, select Azure Data Lake Storage Gen2 Dataset created above.
@@ -93,15 +93,16 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 1. In Synapse Studio, select Develop from the left-hand menu.
 
-![image](https://user-images.githubusercontent.com/84516667/219264799-0517e3ef-cde7-4913-91f5-e6d5794d640d.png)
+<img src="https://user-images.githubusercontent.com/84516667/219264799-0517e3ef-cde7-4913-91f5-e6d5794d640d.png" width=60% height=30%>
 
 2. Select +, then Notebook to add a new notebook.
 
-![image](https://user-images.githubusercontent.com/84516667/219264937-a0b32f5f-f700-4f83-9f29-4790542c4418.png)
+<img src="https://user-images.githubusercontent.com/84516667/219264937-a0b32f5f-f700-4f83-9f29-4790542c4418.png" width=60% height=30%>
 
 3. Attach your Apache Spark pool by selecting it from the Attach to (1) drop-down list, then select {} Add code (3) to create a new cell.
 
-![image](https://user-images.githubusercontent.com/84516667/219265118-b495572f-7804-4535-8d4e-517cc552d692.png)
+<img src="https://user-images.githubusercontent.com/84516667/219265118-b495572f-7804-4535-8d4e-517cc552d692.png" width=60% height=40%>
+
 
 4. Paste the following into the new cell, and replace YOUR_DATALAKE_NAME with the name of your Storage Account Name that is created as part of the deployment.
 
@@ -117,13 +118,14 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
     Select the **Run cell** button to execute the new cell:
  
- ![image](https://user-images.githubusercontent.com/84516667/219265549-a04cf055-7ce0-4849-b77d-6975ba5f210e.png)
+ <img src="https://user-images.githubusercontent.com/84516667/219265549-a04cf055-7ce0-4849-b77d-6975ba5f210e.png" width=60% height=40%>
+ 
 
    > This cell imports required libraries and sets the `adlsPath` variable, which defines the path used to connect to an Azure Data Lake Storage (ADLS) Gen2 account. Connecting to ADLS Gen2 from a notebook in Azure Synapse Analytics uses the power of Azure Active Directory (AAD) pass-through between compute and storage. The `%%spark` "magic" sets the cell language to Scala, which is required to use the `SparkSession` library.
 
 5. Hover over the area just below the cell in the notebook, then select {} Add code to add a new cell.
 
-![image](https://user-images.githubusercontent.com/84516667/219265767-1a1b5c5a-fe74-490d-961f-795200c779d0.png)
+<img src="https://user-images.githubusercontent.com/84516667/219265767-1a1b5c5a-fe74-490d-961f-795200c779d0.png" width=60% height=40%>
 
 6. Paste the following in the new cell, Replace YOUR_CONTAINER_NAME with the name of the container in the storage account and run the cell:
 
@@ -140,7 +142,7 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 
 7. Hover over the area just below the cell in the notebook, then select {} Add code to add a new cell.
 
-![image](https://user-images.githubusercontent.com/84516667/219267113-d4637e01-63ff-4f4f-aedb-b4a80d2c2f77.png)
+<img src="https://user-images.githubusercontent.com/84516667/219267113-d4637e01-63ff-4f4f-aedb-b4a80d2c2f77.png" width=60% height=50%>
 
 8. Paste the following and run the new cell:
 
@@ -161,10 +163,12 @@ Search for SQL Server and click on Continue. select Lined service for Sql Server
 This code writes the data retrieved from Blob Storage into a staging table in Azure Synapse Analytics using the SQL Analytics connector. Using the connector simplifies connecting to Azure Synapse Analytics because it uses AAD pass-through. There is no need to create a password, identity, external table, or format sources, as it is all managed by the connector.
 
 9. After approximately 1-2 minutes, the execution of Cell 3 will complete. Once it has finished, select Data from the left-hand menu.
-![image](https://user-images.githubusercontent.com/84516667/219267479-c94d7cfd-7a41-4014-86fd-95c7b40174b7.png)
+
+<img src="https://user-images.githubusercontent.com/84516667/219267479-c94d7cfd-7a41-4014-86fd-95c7b40174b7.png" width=60% height=60%>
 
 10. Under **Workspace** tab **(1)**, expand **Databases** **(2)** and then expand the **SQLPool01** database **(3)**.
-![image](https://user-images.githubusercontent.com/84516667/219267530-97dc80f8-61ec-45fe-af4e-d8f819dbb0aa.png)
+
+<img src="https://user-images.githubusercontent.com/84516667/219267530-97dc80f8-61ec-45fe-af4e-d8f819dbb0aa.png" width=60% height=60%>
 
 11.  Expand **Tables** and locate the table named `wwi_staging.Sale`.
 
