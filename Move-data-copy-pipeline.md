@@ -41,7 +41,10 @@ Use the following steps to create a SQL Server linked service in the Azure porta
 
 ![image](https://user-images.githubusercontent.com/84516667/219213463-6045cec8-e554-460b-b034-823830c4371a.png)
 
- Set properties to mention table name, select Lined service and integration runtime created above.
+Search for SQL Server and click on Continue. select Lined service for Sql Server created above and select dbo.Customers as Table name. Click on Ok
+
+![image](https://user-images.githubusercontent.com/84516667/228397209-a3e0fd35-bea5-43f1-b239-3172b4008d19.png)
+
  
  **4. Create Azure Data Lake Storage Gen 2 Linked Service:**
  
