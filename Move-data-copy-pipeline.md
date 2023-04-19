@@ -103,7 +103,9 @@ Let's first create a schema in the dedicated SQL Pool,
 
 <img width="664" alt="image" src="https://user-images.githubusercontent.com/84516667/233164171-ab3bfc8d-88bd-46a6-94d2-1801fd34fb9d.png">
 
-4. In Synapse Studio, select Develop from the left-hand menu.
+Now, let's use notebooks to query Azure Data Lake Storage Gen 2 data and load into dedicated SQL Pool using Spark Pool.
+
+1. In Synapse Studio, select Develop from the left-hand menu.
 
 <img src="https://user-images.githubusercontent.com/84516667/219264799-0517e3ef-cde7-4913-91f5-e6d5794d640d.png" width=60% height=30%>
 
